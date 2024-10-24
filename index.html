@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Parallax Scrolling</title>
+    <meta name="keywords" content="scroll animation, grid, gsap, 3d, filter" />
+    <meta name="author" content="Surakarapu Shanmukh Srinivas" />
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://use.typekit.net/pxn8wdc.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <script>document.documentElement.className = "js";</script>
+    <script>
+        (function () {
+            var _paq = window._paq = window._paq || [];
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function () {
+                var u = "//tympanus.net/matomo/";
+                _paq.push(['setTrackerUrl', u + 'matomo.php']);
+                _paq.push(['setSiteId', '1']);
+                var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+                g.async = true; g.src = u + 'matomo.js'; s.parentNode.insertBefore(g, s);
+            })();
+
+        })();
+    </script>
+</head>
+
+<body class="loading">
+    <main class="shadow">
+        <div class="intro">
+            <h1 class="intro__title font-alt">Parallax (3D) <br>Anime Grid</h1>
+            <nav class="tags">
+                <a href="https://github.com/shanmukhisaway">#github</a>
+                <a href="https://en.wikipedia.org/wiki/3D">#3d</a>
+                <a href="https://en.wikipedia.org/wiki/Anime">#anime</a>
+            </nav>
+            <span class="intro__info">Scroll gently &amp; enjoy</span>
+        </div>
+        <section>
+            <div class="grid">
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/1.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/2.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/3.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/4.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/5.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/6.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/7.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/8.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/9.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/10.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/11.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/12.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/13.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/14.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/15.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/16.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/17.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/18.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/19.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/20.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/1.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/2.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/3.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/4.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/5.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/6.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/7.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/8.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/9.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/10.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/11.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/12.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/13.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/14.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/15.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/16.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/17.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/18.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/19.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/20.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/1.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/2.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/3.jpg)"></div>
+                    </div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-imgwrap">
+                        <div class="grid__item-img" style="background-image:url(img/4.jpg)"></div>
+                    </div>
+                </figure>
+            </div>
+            <div class="mark">
+                <div class="mark__inner font-alt">
+                    <span>Akira Toriyama</span> <span>鳥山明</span>
+                    <span>Eiichiro Oda</span> <span>尾田栄一郎</span>
+                    <span>Go Nagai</span> <span>永井豪</span>
+                    <span>Hayao Miyazaki</span> <span>宮崎駿</span>
+                    <span>Kentaro Miura</span> <span>三浦建太郎</span>
+                    <span>Mitsuru Adachi</span> <span>あだち充</span>
+                    <span>Naoki Urasawa</span> <span>浦沢直樹</span>
+                    <span>Riyoko Ikeda</span> <span>池田理代子</span>
+                    <span>Rina Ishikawa</span> <span>莉奈 石川</span>
+                    <span>Rumiko Takahashi</span> <span>高橋留美子</span>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="text font-alt">ANIME</div>
+        </section>
+        <section>
+            <div class="grid grid--full">
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/1.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/2.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/3.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/4.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/5.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/6.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/7.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/8.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/9.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/10.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/11.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/12.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/13.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/14.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/15.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/16.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/17.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/18.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/19.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/20.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/1.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/2.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/3.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/4.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/5.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/6.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/7.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/8.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/9.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/10.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/11.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/12.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/13.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/14.jpg)"></div>
+                </figure>
+                <figure class="grid__item">
+                    <div class="grid__item-img" style="background-image:url(img/15.jpg)"></div>
+                </figure>
+            </div>
+        </section>
+        <p class="credits font-alt">Made by <a href="https://github.com/shanmukhisaway">@shanmukhisaway</a></p>
+    </main>
+    <script>window.addEventListener('load', function() {
+        var filename = 'https://tympanus.net/codrops/adpacks/cda_sponsor.css?' + new Date().getTime();
+        var fileref = document.createElement("link");
+        fileref.setAttribute("rel", "stylesheet");
+        fileref.setAttribute("type", "text/css");
+        fileref.setAttribute("href", filename);
+        document.getElementsByTagName("head")[0].appendChild(fileref);
+    
+        let cdaSpots = ['ad1'];
+        let cdaSpot = cdaSpots[Math.floor(Math.random() * cdaSpots.length)];
+    
+        let cdaLink, cdaSponsorName;
+    
+        switch (cdaSpot) {
+            case "ad1":
+                cdaLink = "http://www.guidde.com?utm_campaign=codrops&utm_source=newsletter&utm_medium=email&utm_term=1024&utm_content=demo_link";
+                cdaSponsorName = "Create stunning AI-generated video guides in seconds. Try Guidde's free demo now!";
+                break;
+            case "ad2":
+                cdaLink = "https://bit.ly/chromatic-codrops";
+                cdaSponsorName = "Chromatic - Visual testing for Storybook, Playwright & Cypress. Catch UI bugs before your users do.";
+                break;
+            case "ad3":
+                cdaLink = "https://bit.ly/codrops-dora-3d";
+                cdaSponsorName = "Dora â€” Build sites with professional-grade animations and 3D interactions, zero code.";
+                break;
+            case "ad4":
+                cdaLink = "https://bit.ly/codrops-diviai";
+                cdaSponsorName = "Divi AI: On demand content creation, code writing & image generation.";
+                break;
+            default:
+                cdaLink = "https://bit.ly/codrops-diviai";
+                cdaSponsorName = "Divi AI: On demand content creation, code writing & image generation.";
+        }
+    
+        var cda = document.createElement('div');
+        cda.id = 'cdawrap';
+        cda.className = 'cdawrap';
+        cda.innerHTML = '<a href="' + cdaLink + '" class="cda-sponsor-link" target="_blank" rel="nofollow noopener">' + cdaSponsorName + '</a>';
+    
+        function insertCda() {
+            const frameElement = document.getElementsByClassName('frame')[0];
+            if (frameElement) {
+                console.log("Frame element found");
+                frameElement.appendChild(cda);
+            } else {
+                console.log("Frame element not found, retrying...");
+                setTimeout(insertCda, 100);
+            }
+        }
+    
+        insertCda();
+    });</script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="https://assets.codepen.io/16327/SplitText3.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/lenis.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script type="module" src="js/index.js"></script>
+</body>
+
+</html>
